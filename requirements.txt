@@ -1,3 +1,4 @@
 requests
 redis
 numpy
+python-dotenv
