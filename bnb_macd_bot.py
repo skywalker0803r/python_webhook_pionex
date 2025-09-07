@@ -64,7 +64,7 @@ def send_telegram_message(message):
 
 # --- 技術指標計算函數 ---
 def calculate_ema(data, length):
-    """計算 EMA（指數移動平均）。"""
+    """計算 EMA 指數移動平均。"""
     ema_list = [sum(data[:length]) / length]
     for price in data[length:]:
         ema_list.append(price * (2 / (length + 1)) + ema_list[-1] * (1 - 2 / (length + 1)))
